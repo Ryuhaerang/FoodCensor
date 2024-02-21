@@ -18,3 +18,26 @@ How to Build and Run
 FoodCensor is a stand-alone application that does not require a backend server. The app reads YouTube webpage on Google Chrome browser locally and overlays intervention screens.
 
 ### TBA
+
+Research Team Members
+---------------------
+**Ryuhaerang Choi [:link:](https://ryuhaerang.github.io/ryuhaerangchoi/)**
+Ph.D. Student
+KAIST
+*Contact for code and implementation*
+
+**Subin park**
+M.S. Student
+KAIST
+
+**Sujin Han [:link:](https://vilotgit.github.io)**
+M.S.-Ph.D. Integrated Student
+KAIST
+
+**Sung-Ju Lee [:link:](https://sites.google.com/site/wewantsj/)**
+Associate Professor
+KAIST
+
+Acknowledgement
+---------------
+This work was supported by the Institute of Information & commu- nications Technology Planning & Evaluation (IITP) grant funded by the Korean government (MSIT) (No. 2022-0-00064, Development of Human Digital Twin Technologies for Prediction and Management of Emotion Workers’ Mental Health Risks).

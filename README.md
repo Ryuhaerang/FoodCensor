@@ -10,7 +10,7 @@ ACM CHI 2024 ([PDF](https://drive.google.com/file/d/1FwvhBpj6P_zRGltLUFfIUL3TAm9
 \
 **Understanding How People with Binge Eating Disorder and Bulimia Interact with Digital Food Content**\
 Ryuhaerang Choi, Subin Park, Sujin Han, and Sung-Ju Lee\
-([arXiv](https://arxiv.org/abs/2311.05920))\
+([arXiv](https://arxiv.org/abs/2311.05920))
 
 How to Build and Run
 ---------------------

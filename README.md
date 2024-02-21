@@ -1,6 +1,6 @@
 # FoodCensor
 
-<img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-lightblue"/>
+<img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
 
 For more information about this project, please visit [https://nmsl.kaist.ac.kr/projects/foodcensor/](https://nmsl.kaist.ac.kr/projects/foodcensor/)
 

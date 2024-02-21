@@ -4,13 +4,14 @@ For more information about this project, please visit [https://nmsl.kaist.ac.kr/
 
 Related Research Papers
 -----------------------
-**FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders**
-Ryuhaerang Choi, Subin Park, Sujin Han, and Sung-Ju Lee
-ACM CHI 2024 ([PDF](https://drive.google.com/file/d/1FwvhBpj6P_zRGltLUFfIUL3TAm9pPV9U/view))
-
-**Understanding How People with Binge Eating Disorder and Bulimia Interact with Digital Food Content**
-Ryuhaerang Choi, Subin Park, Sujin Han, and Sung-Ju Lee
-([arXiv](https://arxiv.org/abs/2311.05920))
+**FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders**\
+Ryuhaerang Choi, Subin Park, Sujin Han, and Sung-Ju Lee\
+ACM CHI 2024 ([PDF](https://drive.google.com/file/d/1FwvhBpj6P_zRGltLUFfIUL3TAm9pPV9U/view))\
+\
+**Understanding How People with Binge Eating Disorder and Bulimia Interact with Digital Food Content**\
+Ryuhaerang Choi, Subin Park, Sujin Han, and Sung-Ju Lee\
+([arXiv](https://arxiv.org/abs/2311.05920))\
+\
 
 How to Build and Run
 ---------------------
@@ -21,22 +22,23 @@ FoodCensor is a stand-alone application that does not require a backend server. 
 
 Research Team Members
 ---------------------
-**Ryuhaerang Choi [:link:](https://ryuhaerang.github.io/ryuhaerangchoi/)**
-Ph.D. Student
-KAIST
-*Contact for code and implementation*
-
-**Subin park**
-M.S. Student
-KAIST
-
-**Sujin Han [:link:](https://vilotgit.github.io)**
-M.S.-Ph.D. Integrated Student
-KAIST
-
-**Sung-Ju Lee [:link:](https://sites.google.com/site/wewantsj/)**
-Associate Professor
-KAIST
+**Ryuhaerang Choi [:link:](https://ryuhaerang.github.io/ryuhaerangchoi/)**\
+Ph.D. Student\
+KAIST\
+*Contact for code and implementation*\
+\
+**Subin park**\
+M.S. Student\
+KAIST\
+\
+**Sujin Han [:link:](https://vilotgit.github.io)**\
+M.S.-Ph.D. Integrated Student\
+KAIST\
+\
+**Sung-Ju Lee [:link:](https://sites.google.com/site/wewantsj/)**\
+Associate Professor\
+KAIST\
+\
 
 Acknowledgement
 ---------------

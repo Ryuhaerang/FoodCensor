@@ -38,7 +38,7 @@ KAIST\
 \
 **Sung-Ju Lee [:link:](https://sites.google.com/site/wewantsj/)**\
 Associate Professor\
-KAIST\
+KAIST
 
 Acknowledgement
 ---------------

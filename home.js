@@ -1355,21 +1355,6 @@ async function sendMsgToBack(isFood, action, key, text) {
   });
 }
 
-async function sendLog(step, keyword, isRequired, reason, warningImg) {
-  return new Promise((resolve, reject) => {
-    chrome.runtime.sendMessage(
-      {
-        action: "TYPES",
-        step: step,
-        keyword: keyword,
-        isRequired: isRequired,
-        reason: reason,
-        warningImg: warningImg,
-      },
-      function (response) {}
-    );
-  });
-}
 async function clearSearchLog(key, length) {
   return new Promise((resolve, reject) => {
     chrome.runtime.sendMessage(
@@ -1463,7 +1448,6 @@ var dbSearch_searchKey = (idx, keyword, totalLen, isCheckAgain) => {
                   document.querySelector("secondQuestion")
                 )
               ) {
-                sendLog("0", text, "unknown", "unknown", -1);
                 firstWindow.innerHTML = `
                   <div class="intervention">
                     <p class="text">Do you need to watch</p>
@@ -1501,13 +1485,6 @@ var dbSearch_searchKey = (idx, keyword, totalLen, isCheckAgain) => {
                         if (!document.querySelector("#first_input").value) {
                           alert("Please write the reason");
                         } else {
-                          sendLog(
-                            "01",
-                            text,
-                            true,
-                            document.querySelector("#first_input").value,
-                            -1
-                          );
                           sendMsgToBack(null, "search_init", null, text);
                           firstQuestion.remove();
                           container.classList.remove("intervention_overlay");
@@ -1536,7 +1513,6 @@ var dbSearch_searchKey = (idx, keyword, totalLen, isCheckAgain) => {
                   .querySelector("#btn_no")
                   .addEventListener("click", function () {
                     sendMsgToBack(null, "search_init", null, "");
-                    sendLog("02", text, false, "unknown", -1);
                     window.location.href = "http://www.youtube.com/";
                     firstWindow.remove();
                   });
@@ -1639,8 +1615,6 @@ function secondIntervention(text) {
   var container = document.querySelector("[role='main']");
   if (container.firstChild) {
     var randNum = Math.floor(Math.random() * PICTORIAL_WARNING.length);
-    // var randNum = 97; // gastrial symptoms 9
-    sendLog("01", text, false, "unknown", randNum);
     var negConName = PICTORIAL_WARNING[randNum].substring(PICTORIAL_WARNING[randNum].indexOf("_") + 1, PICTORIAL_WARNING[randNum].lastIndexOf("_"));
     var negCon = PICTORIAL_WARNING_MSG[negConName];
     var imgSrc = chrome.runtime.getURL(
@@ -1681,13 +1655,6 @@ function secondIntervention(text) {
           if (!document.querySelector("#second_input").value) {
             alert("Please write the reason");
           } else {
-            sendLog(
-              "011",
-              text,
-              false,
-              document.querySelector("#second_input").value,
-              randNum
-            );
             sendMsgToBack(null, "search_init", null, text);
             secondQuestion.remove();
             container.classList.remove("intervention_overlay");
@@ -1713,7 +1680,6 @@ function secondIntervention(text) {
       secondWindow.remove();
     });
     document.querySelector("#btn_yes").addEventListener("click", function () {
-      sendLog("012", text, false, "unknown", randNum);
       sendMsgToBack(null, "search_init", null, "");
       window.location.href = "http://www.youtube.com/";
       secondWindow.remove();

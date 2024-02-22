@@ -2,6 +2,8 @@
 
 <img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
 
+[![Video Label](http://img.youtube.com/vi/ZbrCT_aQxtM/0.jpg)](https://youtu.be/ZbrCT_aQxtM?t=0s)
+
 For more information about this project, please visit [https://nmsl.kaist.ac.kr/projects/foodcensor/](https://nmsl.kaist.ac.kr/projects/foodcensor/)
 
 Related Research Papers

@@ -1638,19 +1638,16 @@ var secondQuestion = document.createElement("secondQuestion");
 function secondIntervention(text) {
   var container = document.querySelector("[role='main']");
   if (container.firstChild) {
-    // var randNum = Math.floor(Math.random() * PICTORIAL_WARNING.length);
-    var randNum = 97; // gastrial symptoms 9
+    var randNum = Math.floor(Math.random() * PICTORIAL_WARNING.length);
+    // var randNum = 97; // gastrial symptoms 9
     sendLog("01", text, false, "unknown", randNum);
-    // var negConName = PICTORIAL_WARNING[randNum].substring(PICTORIAL_WARNING[randNum].indexOf("_") + 1, PICTORIAL_WARNING[randNum].lastIndexOf("_"));
-    // console.log("randum number: ", randNum, negConName);
-    var negCon = "Binge eating can cause <b>gastrointestinal symptoms</b>";
-    // var imgSrc = "chrome-extension://pbafbakkeeaijdhpljfkhdcehfepgfgp/images/" + PICTORIAL_WARNING[randNum] + ".jpg";
+    var negConName = PICTORIAL_WARNING[randNum].substring(PICTORIAL_WARNING[randNum].indexOf("_") + 1, PICTORIAL_WARNING[randNum].lastIndexOf("_"));
+    var negCon = PICTORIAL_WARNING_MSG[negConName];
     var imgSrc = chrome.runtime.getURL(
       `images/${PICTORIAL_WARNING[randNum]}.jpg`
     );
     var referAddr = WARNING_REFER[randNum];
-    var detailText =
-      "Irregular and bad eating habits can lead to gastrointestinal disorders, resulting in symptoms such as heartburn, bloating, vomiting, and indigestion.";
+    var detailText = PICTORIAL_WARNING_DESC[negConName];
     secondWindow.innerHTML = `
     <div class="intervention">
       <p class="warning_text">${negCon}</p>

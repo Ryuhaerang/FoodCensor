@@ -2,6 +2,9 @@
 
 <img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
 
+### Video Figure
+Click the thumbnail below to check out our video figure which describes FoodCensor design and features.
+
 [![Video Label](http://img.youtube.com/vi/OpF-NlDptcU/0.jpg)](https://youtu.be/OpF-NlDptcU?t=0s)
 
 For more information about this project, please visit [https://nmsl.kaist.ac.kr/projects/foodcensor/](https://nmsl.kaist.ac.kr/projects/foodcensor/)

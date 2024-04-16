@@ -42,7 +42,7 @@ M.S.-Ph.D. Integrated Student\
 KAIST\
 \
 **Sung-Ju Lee [:link:](https://sites.google.com/site/wewantsj/)**\
-Associate Professor\
+Professor\
 KAIST
 
 Acknowledgement

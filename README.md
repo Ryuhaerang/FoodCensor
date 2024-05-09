@@ -33,7 +33,7 @@ Ph.D. Student\
 KAIST\
 *Contact for code and implementation*\
 \
-**Subin park [:link:](https://bit.ly/subin--park)**\
+**Subin park [:link:](https://bit.ly/subinp)**\
 M.S. Student\
 KAIST\
 \

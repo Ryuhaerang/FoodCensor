@@ -1450,12 +1450,11 @@ var dbSearch_searchKey = (idx, keyword, totalLen, isCheckAgain) => {
               ) {
                 firstWindow.innerHTML = `
                   <div class="intervention">
-                    <p class="text">Do you need to watch</p>
-                    <p class="keyword">${text}</p>
-                    <p class="text">now?</p></br>
-                    <button id="btn_yes" class="intervention_button">Yes</button>
-                    <button id="btn_no" class="yellow-button intervention_button">No, will watch</br>other video</button>
-                    <button id="btn_but" class="intervention_button">No, but</br>will watch</button>
+                    <p class="text">지금 반드시</p><p class="keyword">${text}</p>
+                    <p class="text">영상을 시청해야만 하나요?</p></br>
+                    <button id="btn_yes" class="intervention_button">네</button>
+                    <button id="btn_no" class="yellow-button intervention_button">아뇨, 다른 영상을</br>시청할래요</button>
+                    <button id="btn_but" class="intervention_button">아니지만</br>시청할래요</button>
                   </div>
                   `;
                 // console.log(firstWindow.innerHTML);
@@ -1467,10 +1466,11 @@ var dbSearch_searchKey = (idx, keyword, totalLen, isCheckAgain) => {
                   .addEventListener("click", function () {
                     firstQuestion.innerHTML = `
                       <div class="intervention">
-                      <p class="text">Why do you need to watch</p>
+                      <p class="text">지금 반드시</p>
                       <p class="keyword">${text}</p>
-                      <p class="text">now?</p></br>
-                      <input class="survey_input" id="first_input" type="text" placeholder="Please write the reason" autofocus></input><br>
+                      <p class="text">을(를)</p></br>
+                      <p class="text">시청해야하는 이유가 무엇인가요?</p>
+                      <input class="survey_input" id="first_input" type="text" placeholder="이유를 입력해주세요" autofocus></input><br>
                       <button id="btn_submit" class="yellow-button intervention_button">Submit</button>
                       </div>
                     `;
@@ -1628,9 +1628,9 @@ function secondIntervention(text) {
       <p class="detail_text">${detailText}</p>
       <img class="warning_img" src=${imgSrc} />
       <p class="reference_text">reference: ${referAddr}</p>
-      <p class="text">How about watching other videos?</p> 
-      <button id="btn_no" class="intervention_button">No,</br>will watch it</button>
-      <button id="btn_yes" class="yellow-button intervention_button">Yes, will watch</br>other videos</button>
+      <p class="text">다른 영상을 시청하는게 어떤가요?</p> 
+      <button id="btn_no" class="intervention_button">아뇨,</br> 그래도 시청할래요</button>
+      <button id="btn_yes" class="yellow-button intervention_button">네, 다른 영상을</br>시청할래요</button>
     </div>
     `;
     container.parentElement.insertBefore(secondWindow, container);
@@ -1641,9 +1641,10 @@ function secondIntervention(text) {
       // console.log("second question window");
       secondQuestion.innerHTML = `
         <div class="intervention">
-        <p class="text">Nevertheless, why do you still want to watch</p>
-        <p class="keyword">${text}?</p>
-        <input class="survey_input" id="second_input" type="text" placeholder="Please wrtie the reason" autofocus></input><br>
+        <p class="text">그럼에도 불구하고</p>
+        <p class="keyword">${text}</p>
+        <p class="text">을(를)\n시청하려는 이유가 무엇인가요?</p>
+        <input class="survey_input" id="second_input" type="text" placeholder="이유를 입력해주세요" autofocus></input><br>
         <button id="btn_submit" class="yellow-button intervention_button">Submit</button>
         </div>
       `;
@@ -1653,7 +1654,7 @@ function secondIntervention(text) {
         .querySelector("#btn_submit")
         .addEventListener("click", function () {
           if (!document.querySelector("#second_input").value) {
-            alert("Please write the reason");
+            alert("이유를 입력해주세요");
           } else {
             sendMsgToBack(null, "search_init", null, text);
             secondQuestion.remove();

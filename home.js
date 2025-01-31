@@ -1756,6 +1756,9 @@ var POSTPOSITION = {
   조림: 2,
   덮밥: 2,
   장: 1,
+  마저: 2,
+  인데: 2,
+  집: 1,
 };
 
 // DATA SET FOR PICTORIAL WARNING

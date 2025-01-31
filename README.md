@@ -3,9 +3,13 @@
 <img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
 
 <p align="center">
-    <img src="assets/FoodCensor_Chrome.png", align="center"/>
+    <figure>
+        <img src="assets/FoodCensor_Chrome.png", align="center"/>
+        <figcaption align="center"> FoodCensor deployed on a Chrome browser. Snapshot of the YouTube Home page including food content without FoodCensor (1) and with FoodCensor (2). FoodCensor conceals Filter buttons, video thumbnails, and Shorts video thumbnails showing food content and disables clicking them.
+    </figure>
 </p>
-This repository is the Chrome Extension version of FoodCensor (*FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders, ACM CHI'24*). This code can be adapted to censor YouTube videos on specific topics by modifying the keywords used to filter content based on textual descriptions (e.g., video titles). 
+
+This repository is the Chrome Extension version of FoodCensor (*FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders, ACM CHI'24*). **This code can be adapted to censor YouTube videos on specific topics by modifying the keywords** used to filter content based on textual descriptions (e.g., video titles). 
 
 For more information about this project, please visit [https://nmsl.kaist.ac.kr/projects/foodcensor/](https://nmsl.kaist.ac.kr/projects/foodcensor/)
 

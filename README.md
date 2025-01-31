@@ -5,7 +5,8 @@
 <p align="center">
     <figure>
         <img src="assets/FoodCensor_Chrome.png" align="center"/>
-        <figcaption align="center"> Figure. FoodCensor deployed on a Chrome browser. Snapshot of the YouTube Home page including food content without FoodCensor (1) and with FoodCensor (2). FoodCensor conceals Filter buttons, video thumbnails, and Shorts video thumbnails showing food content and disables clicking them.
+        <figcaption style="font-size: 12px; color: gray; text-align: center;">
+            <strong>Figure.</strong> FoodCensor deployed on a Chrome browser. Snapshot of the YouTube Home page including food content without FoodCensor (1) and with FoodCensor (2). FoodCensor conceals Filter buttons, video thumbnails, and Shorts video thumbnails showing food content and disables clicking them.
         </figcaption>
     </figure>
 </p>

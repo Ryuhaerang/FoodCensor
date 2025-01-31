@@ -2,7 +2,9 @@
 
 <img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
 
-![FoodCensor Chrome Extension](./assets/FoodCensor_Chrome.png) 
+<p align="center">
+    <img src="assets/FoodCensor_Chrome.png", align="center"/>
+</p>
 This repository is the Chrome Extension version of FoodCensor (*FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders, ACM CHI'24*). This code can be adapted to censor YouTube videos on specific topics by modifying the keywords used to filter content based on textual descriptions (e.g., video titles). 
 
 For more information about this project, please visit [https://nmsl.kaist.ac.kr/projects/foodcensor/](https://nmsl.kaist.ac.kr/projects/foodcensor/)
@@ -23,9 +25,13 @@ FoodCensor is a stand-alone application that does not require a backend server. 
 2. **Load the Extension in Chrome**
    1. Open Chrome and navigate to `chrome://extensions/`.
    2. Enable **Developer mode** (toggle in the top right corner).  
-      ![Enable Developer Mode](./assets/step2-2.png)
-   3. Click **Load unpacked** and select the project folder.
-      ![Load Unpacked](./assets/step2-3.png)
+      <p align="center">
+          <img src="assets/step2-2.png", align="center"/>
+      </p>
+   4. Click **Load unpacked** and select the project folder.
+      <p align="center">
+          <img src="assets/step2-3.png", align="center"/>
+      </p>
 3. **Use the Extension**
    - FoodCensor will filter YouTube videos based on **both English and Korean food-related keywords.**
 

@@ -61,7 +61,7 @@ Research Team Members
 **Ryuhaerang Choi [:link:](https://ryuhaerang.github.io/ryuhaerangchoi/)**\
 Ph.D. Student\
 KAIST\
-*Contact for code and implementation*
+*Contact for code and implementation*\
 \
 **Subin park [:link:](https://bit.ly/subinp)**\
 M.S. Student\

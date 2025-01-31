@@ -1615,7 +1615,10 @@ function secondIntervention(text) {
   var container = document.querySelector("[role='main']");
   if (container.firstChild) {
     var randNum = Math.floor(Math.random() * PICTORIAL_WARNING.length);
-    var negConName = PICTORIAL_WARNING[randNum].substring(PICTORIAL_WARNING[randNum].indexOf("_") + 1, PICTORIAL_WARNING[randNum].lastIndexOf("_"));
+    var negConName = PICTORIAL_WARNING[randNum].substring(
+      PICTORIAL_WARNING[randNum].indexOf("_") + 1,
+      PICTORIAL_WARNING[randNum].lastIndexOf("_")
+    );
     var negCon = PICTORIAL_WARNING_MSG[negConName];
     var imgSrc = chrome.runtime.getURL(
       `images/${PICTORIAL_WARNING[randNum]}.jpg`
@@ -2022,61 +2025,65 @@ var WARNING_REFER = [
 ];
 
 var PICTORIAL_WARNING_MSG = {
-  anxiety_disorder: "폭식은 <b>불안장애</b>로 이어질 수 있어요",
-  depressive_disorder: "폭식은 <b>우울장애</b>로 이어질 수 있어요",
-  low_self_esteem: "폭식은 <b>자존감 하락</b>으로 이어질 수 있어요",
-  mood_disorder: "폭식은 <b>기분장애</b>로 이어질 수 있어요",
-  panic_attack: "폭식은 <b>공황발작</b>으로 이어질 수 있어요",
-  sleep_disorder: "폭식은 <b>수면장애</b>로 이어질 수 있어요",
-  social_anxiety: "폭식은 <b>사회불안장애</b>로 이어질 수 있어요",
-  substance_use_disorder: "폭식은 <b>물질사용장애</b>로 이어질 수 있어요",
-  dental_erosion: "폭식은 <b>치아부식</b>으로 이어질 수 있어요",
-  diabetes: "폭식은 <b>2형 당뇨</b>로 이어질 수 있어요",
-  dyslipidemia: "폭식은 <b>이상지혈증</b>으로 이어질 수 있어요",
-  hypertension: "폭식은 <b>고혈압</b>으로 이어질 수 있어요",
-  parotid_enlargement: "폭식은 <b>침샘 비대증</b>으로 이어질 수 있어요",
-  reduced_salivary_flow_rate: "폭식은 <b>구강 건조증</b>으로 이어질 수 있어요",
-  ulcer: "폭식은 <b>위궤양</b>으로 이어질 수 있어요",
-  cavities: "폭식은 <b>충치</b>로 이어질 수 있어요",
-  impulse_control_disorder: "폭식은 <b>충동조절장애</b>로 이어질 수 있어요",
-  gastrointestinal_symptoms: "폭식은 <b>위장장애</b>로 이어질 수 있어요",
+  anxiety_disorder: "Binge eating can lead to <b>anxiety disorders</b>.",
+  depressive_disorder: "Binge eating can lead to <b>depressive disorders</b>.",
+  low_self_esteem: "Binge eating can lead to <b>low self-esteem</b>.",
+  mood_disorder: "Binge eating can lead to <b>mood disorders</b>.",
+  panic_attack: "Binge eating can lead to <b>panic attacks</b>.",
+  sleep_disorder: "Binge eating can lead to <b>sleep disorders</b>.",
+  social_anxiety: "Binge eating can lead to <b>social anxiety disorder</b>.",
+  substance_use_disorder:
+    "Binge eating can lead to <b>substance use disorder</b>.",
+  dental_erosion: "Binge eating can lead to <b>dental erosion</b>.",
+  diabetes: "Binge eating can lead to <b>Type 2 diabetes</b>.",
+  dyslipidemia: "Binge eating can lead to <b>dyslipidemia</b>.",
+  hypertension: "Binge eating can lead to <b>hypertension</b>.",
+  parotid_enlargement:
+    "Binge eating can lead to <b>parotid gland enlargement</b>.",
+  reduced_salivary_flow_rate: "Binge eating can lead to <b>dry mouth</b>.",
+  ulcer: "Binge eating can lead to <b>gastric ulcers</b>.",
+  cavities: "Binge eating can lead to <b>cavities</b>.",
+  impulse_control_disorder:
+    "Binge eating can lead to <b>impulse control disorder</b>.",
+  gastrointestinal_symptoms:
+    "Binge eating can lead to <b>gastrointestinal disorders</b>.",
 };
 
 var PICTORIAL_WARNING_DESC = {
   anxiety_disorder:
-    "다양한 형태의 비정상적, 병적인 불안과 공포로 인하여 일상 생활에 장애를 일으키는 정신 질환 입니다",
+    "A mental disorder characterized by various forms of abnormal and pathological anxiety and fear, leading to disruptions in daily life.",
   depressive_disorder:
-    "의욕 저하와 우울감을 주요 증상으로 하여 다양한 인지 및 정신 신체적 증상을 일으켜 일상 기능의 저하를 가져오는 질환입니다",
+    "A disorder that primarily manifests as decreased motivation and persistent feelings of sadness, leading to cognitive, psychological, and physical symptoms that impair daily functioning.",
   low_self_esteem:
-    "자존감이 낮으면 스스로를 사랑하고, 가치 있게 여기기 어려워집니다",
+    "Low self-esteem makes it difficult to love oneself and recognize one's own value.",
   mood_disorder:
-    "기분이 심하게 변동되어 극심한 피로감, 삶에 대한 의지 상실, 절망감 등을 일으키는 병입니다",
+    "A condition where extreme mood swings cause severe fatigue, loss of will to live, and feelings of despair.",
   panic_attack:
-    "특별한 이유 없이 예상치 못하게 나타나는 극단적인 불안 증상을 일으킵니다",
+    "A sudden and unexpected episode of intense anxiety without any apparent reason.",
   sleep_disorder:
-    "건강한 수면을 취하지 못하거나, 또는 수면리듬이 흐트러져 있어서 깨어 있을 때 어려움을 겪는 상태를 의미합니다",
+    "A condition where individuals struggle to maintain healthy sleep patterns or experience disrupted sleep rhythms, leading to difficulties during waking hours.",
   social_anxiety:
-    "사회적 상황에 (예. 대화를 하거나 낯선 사람을 만나는 것, 음식을 먹거나 마시는 자리, 발표 또는 연설) 노출되는 것을 극도로 두려워하거나 불안해 하는 증상을 의미합니다",
+    "An extreme fear or anxiety when exposed to social situations (e.g., talking to strangers, eating or drinking in public, giving speeches or presentations).",
   substance_use_disorder:
-    "알코올, 담배와 같은 약물 혹은 처방약 등의 물질 사용을 조절할 수 없고, 물질 사용이 가정이나 직장에서 문제를 야기하더라도 이를 계속하여 사용하는 상태를 의미합니다",
+    "A condition where individuals lose control over the use of substances such as alcohol, tobacco, or prescription drugs, continuing their use despite negative consequences at home or work.",
   dental_erosion:
-    "구토 시 올라오는 위산은 치아의 표면을 녹여 치아가 부식되고, 짧아집니다",
+    "Stomach acid from vomiting dissolves the enamel on the tooth surface, leading to dental erosion and shortened teeth.",
   diabetes:
-    "잘못된 식습관으로 인해 몸 안의 인슐린이 혈당을 잘 낮추지 못하고, 췌장의 인슐린 분비기능을 떨어뜨려 고혈압으로 이어집니다",
+    "Unhealthy eating habits impair insulin function in the body, reducing the pancreas's ability to secrete insulin properly, which can lead to diabetes.",
   dyslipidemia:
-    "폭식으로 인해 과도한 지방이 혈관벽에 싸여 염증 반응을 일으키고 이상지혈증으로 이어집니다",
+    "Excessive fat buildup in blood vessels due to binge eating can trigger inflammatory responses, leading to dyslipidemia.",
   hypertension:
-    "폭식 시에는 위장으로가는 혈액량을 급격히 증가시켜 고혈압을 일으킵니다",
+    "During binge eating, a sudden increase in blood flow to the digestive tract can lead to hypertension.",
   parotid_enlargement:
-    "폭식과 구토 행위는 침샘을 자극해 침샘 조직이 커져 침샘비대증이 발생할 수 있습니다",
+    "Binge eating and vomiting stimulate the salivary glands, causing their tissues to enlarge, which may result in parotid gland enlargement.",
   reduced_salivary_flow_rate:
-    "마른 음식, 산성 음식, 카페인과 알콜이 포함된 음식 등은 탈수를 유발해 구강 건조증을 일으킬 수 있습니다",
+    "Dry foods, acidic foods, caffeine, and alcohol can cause dehydration, leading to dry mouth.",
   ulcer:
-    "폭식과 구토 행위로 인해 위장의 균형이 깨져 위장의 점막이 손상되고 궤양이 발생할 수 있습니다",
+    "The balance of the stomach is disrupted due to binge eating and vomiting, leading to damage in the stomach lining and the development of ulcers.",
   cavities:
-    "탄수화물은 구강 내 세균의 영양분이 되고, 세균은 구강의 산성도를 증가시켜 충치를 유발합니다",
+    "Carbohydrates serve as a nutrient source for oral bacteria, increasing acidity in the mouth and leading to cavities.",
   impulse_control_disorder:
-    "자신이나 타인에게 해가 되는 행동을 반복하며 이러한 충동과 욕구를 조절하지 못하는 정신 질환 입니다",
+    "A mental disorder characterized by repeated harmful behaviors towards oneself or others and an inability to control these impulses and desires.",
   gastrointestinal_symptoms:
-    "불규칙적이고 잘못된 식습관은 위장장애로 이어져 속쓰림, 더부룩함, 구토, 소화불량, 부글거림 등의 증상이 발생할 수 있습니다",
+    "Irregular and unhealthy eating habits can lead to gastrointestinal disorders, causing symptoms such as heartburn, bloating, vomiting, indigestion, and stomach gurgling.",
 };

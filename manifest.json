@@ -1,6 +1,6 @@
 {
-  "name": "푸차",
-  "description": "푸차 크롬 익스텐션 프로그램입니다",
+  "name": "FoodCensor",
+  "description": "FoodCensor Chrome Extension. The app reads YouTube webpage on Google Chrome browser locally and overlays intervention screens.",
   "version": "1.0",
   "manifest_version": 3,
   "background": {

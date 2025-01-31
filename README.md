@@ -28,16 +28,18 @@ FoodCensor is a stand-alone application that does not require a backend server. 
 
 1. **Download the Repository**  
    - Download or clone this repository to your local machine.
+     * \*You don't need `assets` to execute FoodCensor Chrome extension.
 2. **Load the Extension in Chrome**
    1. Open Chrome and navigate to `chrome://extensions/`.
    2. Enable **Developer mode** (toggle in the top right corner).  
       <p align="center">
           <img src="assets/step2-2.png", align="center"/>
       </p>
-   4. Click **Load unpacked** and select the project folder.
+   4. Click **Load unpacked**.
       <p align="center">
           <img src="assets/step2-3.png", align="center"/>
       </p>
+   5. Select the project folder.
 3. **Use the Extension**
    - FoodCensor will filter YouTube videos based on **both English and Korean food-related keywords.**
 
@@ -59,7 +61,7 @@ Research Team Members
 **Ryuhaerang Choi [:link:](https://ryuhaerang.github.io/ryuhaerangchoi/)**\
 Ph.D. Student\
 KAIST\
-*Contact for code and implementation*\
+* \*Contact for code and implementation*
 \
 **Subin park [:link:](https://bit.ly/subinp)**\
 M.S. Student\

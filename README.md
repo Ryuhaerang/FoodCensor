@@ -1,6 +1,6 @@
-# FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders
-
 <img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
+
+# FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders
 
 <p align="center">
     <figure>

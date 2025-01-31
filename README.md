@@ -1,6 +1,6 @@
-<img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
-
 # FoodCensor: Promoting Mindful Digital Food Content Consumption for People with Eating Disorders
+
+<img src="https://img.shields.io/badge/platform-chrome-green"/> <img src="https://img.shields.io/badge/language-javascript-yellow"/>
 
 <p align="center">
     <figure>
@@ -73,6 +73,6 @@ KAIST\
 Professor\
 KAIST
 
-Acknowledgement
+Acknowledgment
 ---------------
-This work was supported by the Institute of Information & commu- nications Technology Planning & Evaluation (IITP) grant funded by the Korean government (MSIT) (No. 2022-0-00064, Development of Human Digital Twin Technologies for Prediction and Management of Emotion Workers’ Mental Health Risks).
+This work was supported by the Institute of Information & communications Technology Planning & Evaluation (IITP) grant funded by the Korean government (MSIT) (No. 2022-0-00064, Development of Human Digital Twin Technologies for Prediction and Management of Emotion Workers’ Mental Health Risks).

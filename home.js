@@ -400,7 +400,7 @@ new MutationObserver(function (mutations) {
  */
 
 //async function dbSearch(db, valArray, content){
-var dbSearch = (valArray, wordIdx, idx, pageName, text, totalLen) => { // tmp: 이게 호출 돼서 로그 찍음..
+var dbSearch = (valArray, wordIdx, idx, pageName, text, totalLen) => {
   // console.log("dbSearch: START");
   var isLastRotation = false;
   Object.keys(POSTPOSITION).forEach((pp, pi) => {
@@ -424,7 +424,7 @@ var dbSearch = (valArray, wordIdx, idx, pageName, text, totalLen) => { // tmp: �
         }
         if (wordIdx === totalLen - 1 && isLastRotation) {
           if (flagForHiding[idx]) {
-            console.log(`(${pageName}) text: ${text}`); // tmp: 여기서 홈화면 text 로그
+            console.log(`(${pageName}) text: ${text}`);
             sendMsgToBack(true, "add", pageName, text);
             if (pageName === "typeS") {
               // pass
@@ -532,7 +532,7 @@ var dbSearch = (valArray, wordIdx, idx, pageName, text, totalLen) => { // tmp: �
 };
 
 var extractTextArray = (idx, pageName, hideContents_content) => {
-  var text = hideContents_content[idx].innerText; // tmp: 여기서 읽어옴
+  var text = hideContents_content[idx].innerText;
   if (text) {
     text = text.replace(regExp, " ");
     text = text.replace("ㅣ", " ");
@@ -544,7 +544,7 @@ var extractTextArray = (idx, pageName, hideContents_content) => {
     const loop = async (array) => {
       const promises = await array.map(async (valArray, wordIdx) => {
         const ct = new Promise((resolve, reject) => {
-          dbSearch(valArray, wordIdx, idx, pageName, text, array.length); // tmp: 여기서 호출함
+          dbSearch(valArray, wordIdx, idx, pageName, text, array.length);
         });
         return ct;
       });
@@ -605,7 +605,7 @@ function hideContents(pageName, subName) {
               ...Array(hideContents_content.length).keys(),
             ].map(async (idx) => {
               const tmp = new Promise((resolve, reject) => {
-                extractTextArray(idx, pageName, hideContents_content); // tmp: 여기서 읽음
+                extractTextArray(idx, pageName, hideContents_content);
               });
               return tmp;
             });

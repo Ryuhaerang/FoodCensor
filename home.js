@@ -975,11 +975,10 @@ function hideWatchVideo(pageName) {
         videoTag = container.querySelector("video");
         isNewLoading(pageName, window.location.href, 1).then((result) => {
           if (result) {
-            titleTag =
-              videoTag.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelectorAll(
-                "h2"
-              )[1];
+            titleTag = videoTag.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.querySelectorAll("h2")[0]
+
             var text = titleTag.innerText;
+            console.log("tmp: ", text);
             if (text && text !== watchShortsTitle) {
               watchShortsTitle = text;
               text = text.replace(regExp, " ");
